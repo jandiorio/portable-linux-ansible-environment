@@ -1,0 +1,33 @@
+version: "3"
+services:
+  ansible:
+    container_name: ansible
+    networks:
+      - automation_network
+    tty: true
+    build:
+      context: ansible
+      dockerfile: Dockerfile
+  linux1:
+    container_name: linux1
+    networks:
+      - automation_network
+    tty: true
+    privileged: true
+    build:
+      context: linux1
+      dockerfile: Dockerfile
+  linux2:
+    container_name: linux2
+    networks:
+      - automation_network
+    # ports:
+    #   - "22:22"
+    tty: true
+    privileged: true
+    build:
+      context: linux2
+      dockerfile: Dockerfile
+
+networks:
+  automation_network:
