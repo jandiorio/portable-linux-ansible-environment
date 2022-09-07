@@ -1,0 +1,11 @@
+---
+- name: TEST PLAYBOOK
+  hosts: linux*
+  gather_facts: no
+
+  tasks:
+
+    - name: INSTALL iputils-ping
+      ansible.builtin.apt:
+        name: iputils-ping
+        state: present
