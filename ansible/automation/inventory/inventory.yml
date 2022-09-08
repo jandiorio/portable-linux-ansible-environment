@@ -2,8 +2,4 @@
 all:
   hosts:
     linux1:
-      ansible_user: ubuntu
-      ansible_password: ubuntu
     linux2:
-      ansible_user: ubuntu
-      ansible_password: ubuntu

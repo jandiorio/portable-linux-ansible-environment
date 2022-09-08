@@ -5,6 +5,8 @@ services:
     networks:
       - automation_network
     tty: true
+    ports:
+      - "2201:22"
     build:
       context: ansible
       dockerfile: Dockerfile
