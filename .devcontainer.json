@@ -1,5 +1,12 @@
 {
     "dockerComposeFile": "compose.yaml",
     "service": "ansible",
-    "workspaceFolder": "/code/ansible/automation"
+	"workspaceFolder": "/code/ansible/automation",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"redhat.ansible"
+			]
+		}
+	}
 }
