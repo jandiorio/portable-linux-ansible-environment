@@ -1,4 +1,5 @@
 ansible-core
+ansible-lint
 paramiko
 jmespath
 psutil
