@@ -1,5 +1,5 @@
 {
     "dockerComposeFile": "compose.yaml",
     "service": "ansible",
-    "workspaceFolder":"/working/automation"
+    "workspaceFolder": "/code/ansible/automation"
 }
